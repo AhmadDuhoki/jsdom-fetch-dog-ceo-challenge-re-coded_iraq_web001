@@ -31,12 +31,12 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   breedDropDown.addEventListener("change", (e) => {
-    let breedLis = document.getElementsByClassName("hide");
+    let dogsBreedLi = document.getElementsByClassName("hide");
     let select = e.target.value;
-    for (let li of breedLis) {
+    for (const li of dogsBreedLi) {
       li.style.display = "block";
     }
-    for (let li of breedLis) {
+    for (let li of dogsBreedLi) {
       if (select === "all") {
         li.style.display = "block";
       } else {
