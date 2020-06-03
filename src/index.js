@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function(){
       li.style.display = "block";
     }
     for (let li of dogsBreedLi) {
-      if (select === "all") {
+      if (select === "selectOne") {
         li.style.display = "block";
       } else {
         li.innerText.charAt(0) === select
