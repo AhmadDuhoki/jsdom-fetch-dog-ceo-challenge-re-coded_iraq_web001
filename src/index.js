@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function(){
   }
   
   breedDropDown.addEventListener("change", (e) => {
-    let breedLis = document.getElementsByClassName("breed-list-item");
+    let breedLis = document.getElementsByClassName("hide");
     let select = e.target.value;
     for (let li of breedLis) {
       li.style.display = "block";
@@ -57,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function(){
     for(const dBreed in dogsBreed.message){
       let li = document.createElement('li');
       li.innerText = dBreed;
+      li.classList.add('hide');
       dogBreedsContainer.appendChild(li);
       li.addEventListener('click', setRandomColor);
     }
